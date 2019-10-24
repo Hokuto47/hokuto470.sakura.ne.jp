@@ -20,3 +20,9 @@ Text Domain:  foundations-child
 body {
   font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, Arial, sans-serif;
 }
+
+.header-inner {
+    width: 1600px;
+    height: 400px;
+    margin: 0 auto;
+}
