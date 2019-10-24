@@ -1,0 +1,22 @@
+/*
+Theme Name: Foundations Child
+Theme URI: https://flythemes.net/wordpress-themes/free-constructions-wordpress-theme/
+Author: Flythemes
+Author URI: https://flythemes.net
+Description:  Foundations is construction WordPress theme for Construction, Building, Excavation, Earthmoving and Architecture businesses. Fully responsive theme which works awesome across all modern devices. Foundations is a nice looking theme, which is customizable in all aspects – it is suitable for any type of business. It has purpose oriented design and comes with image slider in homepage and some services boxes. Select some color options given in customizer. Built with semantic best practices and search engines in mind. This theme compatible with the latest version of WordPress and plugins like wocommerce and contact form . 
+Template: foundations
+Version: 1.1
+License: GNU General Public License
+License URI: license.txt
+Text Domain: foundations
+Tags:  right-sidebar, custom-background, custom-header, custom-menu, featured-images, theme-options, threaded-comments, custom-logo, blog, full-width-template
+
+Foundations is based on Underscores theme(Underscores is distributed under the terms of the GNU GPL v2 or later).
+Foundations WordPress Theme has been created by Flythemes(flythemes.net), 2018.
+Foundations WordPress Theme is released under the terms of GNU GPL
+Text Domain:  foundations-child
+*/
+
+body {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, Arial, sans-serif;
+}
