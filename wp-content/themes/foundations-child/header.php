@@ -54,6 +54,8 @@
 				<div class="clear"></div>				
             </div><!-- header-inner -->               
 		</div><!-- header -->
+		
 		<div class="main-nav">
-						<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>							
+						<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>	
+												
 				</div>
