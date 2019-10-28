@@ -14,6 +14,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,30 +37,39 @@
 <?php } ?>
         
 <div id="header">
+<div class="container">
             <div class="header-inner">	
+            	<div class="col-xs-10 col-sm-2">
 				<div class="logo">
 					<?php foundations_the_custom_logo(); ?>
 						<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_attr(bloginfo( 'name' )); ?></a></h1>
 
-				
+
 				
 					<?php $description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
 						<p><?php echo esc_html($description); ?></p>
 					<?php endif; ?>
 				</div>
-                  
+                 </div>
 				<div class="toggle">
 						<a class="toggleMenu" href="#"><?php esc_html_e('Menu','foundations'); ?></a>
 				</div> 	
-									
-																<div class="main-nav">
-						<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>	
-												
-				</div>
+				<div class="col-xs-0 col-sm-10">
+				<p>Written by Manabu Bannai</p>
+			</div>
+			</div>
+						
+																
 														
 										
-				<div class="clear"></div>				
-            </div><!-- header-inner -->               
+				<div class="clear"></div>
+				</div>
+				            <div class="main-nav nav">
+						<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>	
+												
+				</div>   				
+            </div><!-- header-inner -->   
+         
 		</div><!-- header -->
 		
