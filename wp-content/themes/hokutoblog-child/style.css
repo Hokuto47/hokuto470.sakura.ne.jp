@@ -110,6 +110,8 @@ http://kachibito.net/wordpress/theme-development-flow.html#02
 /*４．ホワイトスペースにあえてはみ出す*/
 /*header*/
 
+/*色分け*/
+
 #masthead {
     display: block;
 	background-color: azure;
@@ -129,4 +131,65 @@ http://kachibito.net/wordpress/theme-development-flow.html#02
     display: block;
 	background-color: #b2b2b2;
 	
+}
+
+/* BODY */ 
+
+body {
+    font-family: "Open Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.42857143;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #00b9eb2e;
+}
+
+/* -----------------NAVBAR----------------- */
+
+.main-navigation.bt-navbar-bootcamp {
+    height: 22px;
+    background-color: #333;
+    border: none;
+}
+
+.main-navigation {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: none;
+    width: 100%;
+    height: 70px;
+    z-index: 1000
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+/* スマートフォン対応 1024px */
+@media (min-width: 1024px){
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
+}
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
