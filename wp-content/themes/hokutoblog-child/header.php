@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+	<?php   wp_head();  ?>
 </head>
 <!--
 参考サイト 
@@ -42,8 +42,6 @@ ABテストツール：https://accounts.google.com/signin/v2/identifier?service=
 
 <h2><a href="#"></a></h2>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hokutoblog' ); ?></a>
-	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php 
 			the_custom_logo();
@@ -62,16 +60,22 @@ ABテストツール：https://accounts.google.com/signin/v2/identifier?service=
 				<p class="site-description"><?php echo $hokutoblog_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hokutoblog' ); ?></a>
+	<header id="masthead" class="site-header">
 
-		<nav id="site-navigation" class="main-navigation navbar-fixed-top bt-navbar-bootcamp header-fixed"><a>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hokutoblog' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-			</a>
+		<nav id="site-navigation" class="navbar main-navigation navbar-fixed-top bt-navbar-bootcamp header-fixed">
+			<div class="navbar-inner">
+			
+				<a>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hokutoblog' ); ?></button>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+				</a>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
