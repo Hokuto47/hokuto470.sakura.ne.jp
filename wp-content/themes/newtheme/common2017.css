@@ -1,0 +1,437 @@
+/*----------------------------------------
+
+!!!!!!!!common.css don't edit CSS!!!!!!!!
+
+----------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  line-height: 1.4;
+  font-size: 14px;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+main {
+  padding: 60px 0 0;
+  background: #fff;
+  position: relative;
+  display: block;
+}
+
+.carma_main_inner {
+  width: 970px;
+  margin: 0 auto;
+  padding: 40px 0 90px;
+}
+
+a img {
+  border: none;
+  vertical-align: baseline;
+}
+
+.carma_wrap {
+  position: relative;
+  background: #000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: #f40009;
+  width: 100%;
+  height: 60px;
+  z-index: 200;
+}
+
+.header_inner {
+  position: relative;
+  min-width: 970px;
+  height: 60px;
+  margin: 0 auto;
+  /*.hfdefault & {
+  	min-width: 910px;
+  	width: 910px;
+  }*/
+}
+
+.header_left {
+  position: relative;
+  z-index: 3;
+  display: table;
+  float: left;
+  padding: 0 0 0 50px;
+  /*.hfdefault & {padding: 0;}*/
+}
+
+.header_left h1 {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 28px 0 0;
+  height: 60px;
+}
+
+.product .navi_product a,
+.cm .navi_cm a,
+.campaign .navi_campaign a {
+  background: #a80006;
+}
+
+.header_right {
+  position: relative;
+  /*.hfdefault & .header_navi{
+  	left: 320px;
+  	width: 404px;
+  	padding: 0;
+  	.navi_top{width: 83px;}
+  	.navi_product{width: 74px;}
+  	.navi_cm{width: 114px;}
+  	.navi_campaign{width: 133px;}
+  }*/
+}
+
+.header_right .header_navi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  width: -webkit-calc(100% - 600px);
+  width: calc(100% - 600px);
+  padding: 0 230px 0 370px;
+}
+
+.header_right .header_navi li {
+  display: table-cell;
+  width: 25%;
+}
+
+.header_right .header_navi li a {
+  height: 60px;
+  padding: 0;
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header_right .header_navi li a:hover {
+  background: #a80006;
+}
+
+.header_share {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 170px;
+  height: 40px;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: #f40009;
+  -webkit-transition: background-color 0.2s ease 0s, height 0.2s ease 0s;
+  -moz-transition: background-color 0.2s ease 0s, height 0.2s ease 0s;
+  -ms-transition: background-color 0.2s ease 0s, height 0.2s ease 0s;
+  -o-transition: background-color 0.2s ease 0s, height 0.2s ease 0s;
+  transition: background-color 0.2s ease 0s, height 0.2s ease 0s;
+  /*.hfdefault &{ right: 0;}*/
+}
+
+.header_share.open {
+  background: #ebebeb;
+  height: 109px;
+}
+
+.header_share.open .share {
+  background: url(/images/common/navi_share_open.png) no-repeat 0 0;
+}
+
+.header_share .share {
+  display: block;
+  width: 170px;
+  height: 40px;
+  background: url(/images/common/navi_share.png) no-repeat 0 0;
+  text-indent: -9999px;
+}
+
+.header_share img {
+  vertical-align: bottom;
+}
+
+.header_share_list {
+  padding: 10px 20px 26px;
+  text-align: center;
+  letter-spacing: -.4em;
+}
+
+.header_share_list li {
+  width: 33px;
+  height: 33px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: normal;
+}
+
+.header_share_list li.google {
+  display: none;
+}
+
+.header_share_list li a {
+  background: none !important;
+}
+
+.header_share_list .google {
+  background: url(/images/common/header_share_list_ggp.png) no-repeat 0 0;
+}
+
+.header_share_list .facebook {
+  background: url(/images/common/header_share_list_fb.png) no-repeat 0 0;
+}
+
+.header_share_list .twitter {
+  background: url(/images/common/header_share_list_tw.png) no-repeat 0 0;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.hfdefault .footer {
+  height: 150px;
+  position: static;
+  background: #ebebeb;
+}
+
+.footer-carousel {
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+}
+
+.footer-carousel .footer-carousel__wrap {
+  position: relative;
+  width: 910px;
+  min-height: 80px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.footer-carousel .footer-carousel__stage {
+  margin: 0 6.04396% 0 0;
+  width: 93.95604%;
+  height: 80px;
+  overflow: hidden;
+}
+
+.footer-carousel .footer-carousel__stage .footer-carousel__stage__inner:before, .footer-carousel .footer-carousel__stage .footer-carousel__stage__inner:after {
+  content: "";
+  display: table;
+}
+
+.footer-carousel .footer-carousel__stage .footer-carousel__stage__inner:after {
+  clear: both;
+}
+
+.footer-carousel .footer-carousel__stage .footer-carousel__stage__inner > div {
+  float: left;
+  margin-right: 3.50877%;
+  width: 29.82456%;
+}
+
+.footer-carousel .footer-carousel__link {
+  float: left;
+  width: 100%;
+  text-decoration: none;
+}
+
+.footer-carousel .footer-carousel__link img {
+  vertical-align: top;
+}
+
+.footer-carousel .footer-carousel__link .bnr {
+  width: 130px;
+  height: 80px;
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+.footer-carousel .footer-carousel__link figcaption {
+  vertical-align: bottom;
+  font-size: 11px;
+  color: #333333;
+  float: left;
+  width: 110px;
+}
+
+.footer-carousel .footer-carousel__link figcaption span {
+  display: block;
+  margin-top: 7px;
+}
+
+.footer-carousel .footer-carousel__link figcaption span img {
+  width: 83px;
+  height: 20px;
+}
+
+.footer-carousel .btn_more {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.commonFooter {
+  clear: both;
+  line-height: 1;
+  font-size: 8px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  zoom: 1;
+  background: #f40009;
+}
+
+.commonFooter:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.commonFooter img {
+  border: 0;
+}
+
+.commonFooter ul, .commonFooter li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.commonFooter ul {
+  float: right;
+  display: inline;
+  margin: 5px 0 0 0;
+}
+
+.commonFooter ul li {
+  display: inline;
+}
+
+.commonFooter ul li a {
+  float: left;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 1;
+}
+
+.commonFooter .commonFooterNavi {
+  width: 970px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.commonFooter .commonFooterNavi li {
+  float: left;
+  margin: 0 0 3px 0;
+  padding: 0;
+}
+
+.commonFooter .commonFooterNavi img {
+  vertical-align: bottom;
+}
+
+.commonFooter .commonFooterNavi .commonCopyright {
+  padding: 0;
+  margin: 5px 0 0;
+  float: left;
+}
+
+.commonFooter .commonSocial {
+  float: right;
+  margin: 0 0 0 52px;
+}
+
+.commonFooter .commonSocial dt {
+  float: left;
+  margin: 5px 0 0;
+}
+
+.commonFooter .commonSocial dd {
+  float: left;
+  margin-left: 10px;
+}
+
+.commonFooter .commonSocial .commonSocialLink {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.commonFooter .commonSocial .commonSocialLine {
+  background: url(/images/common/icon_line.png) no-repeat 0 0 transparent;
+}
+
+.commonFooter .commonSocial .commonSocialFb {
+  background: url(/images/common/icon_facebook.png) no-repeat 0 0 transparent;
+}
+
+.commonFooter .commonSocial .commonSocialTw {
+  background: url(/images/common/icon_twitter.png) no-repeat 0 0 transparent;
+}
+
+.commonFooter .commonSocial .commonSocialInsta {
+  background: url(/images/common/icon_instagram.png) no-repeat 0 0 transparent;
+}

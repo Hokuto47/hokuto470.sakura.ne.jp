@@ -1,0 +1,242 @@
+/*
+Theme Name: bootstrap
+*/
+
+
+
+/*
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+*/
+
+/*	navbar	*/
+.pc-fixed {
+    position: inherit;
+	
+}
+.navbar {
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+@media screen and (max-width:768px) {
+.pc-fixed {
+/*    position: fixed;*/
+    min-height: 0px;
+    margin-bottom: 0px;
+        /* border: 1px solid transparent;*/
+
+
+	} 
+
+
+}
+
+@media screen and (min-width:768px) {
+.is-fixed .navbar-fixed-top {
+  position: fixed; 
+  top: 0;
+  left: 0;
+	}
+	body.is-fixed {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+} }
+
+
+/*top images*/
+ 
+
+@media screen and (max-width:768px) {
+
+	img.sp_db {
+        /* 画像位置の調整用 */
+	   width: 100%;
+		height: 100%;
+		object-fit: cover;
+	    position: inherit;
+	    -wedkid-position: inherit;
+		backface-visibility: hidden;
+		z-index: 20;
+	} 
+
+	img.pc_db{
+        /* 画像位置の調整用 */
+		display: none; 
+	
+}
+
+}
+
+ 
+@media screen and (min-width:768px) {
+
+	img.pc_db{ 
+        /* 画像位置の調整用 */
+		width: 100%;
+	}
+	img.sp_db{  
+/*         画像位置の調整用 */
+		display: none;
+	
+}
+}
+ 
+/*
+@media screen and (min-width:768px) {
+.navbar {
+    position: fixed;
+    min-height: 0px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+	}}
+*/
+
+/*footer位置固定（SP、PCで表示方法が異なる）*/
+@media screen and (max-width:768px) {
+	.sp-footer {
+	background-color: lightblue;
+    width: 100%;
+    height: 150px;
+    position: inherit;
+    bottom: 0px;
+	z-index: 20;
+	}
+	.pc-footer {
+	display: none;
+	}
+	
+} 
+@media screen and (min-width:768px) {
+.pc-footer {
+    background-color: lightblue;
+    width: 100%;
+    height: 150px;
+    position:  fixed;
+    bottom: 0;
+	z-index: 20;
+	} 
+	.sp-footer {
+		display: none;
+	}
+}
+
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  min-height: 0vh;
+}
+/* footerimage */
+horizontal {
+width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+.container-fluid {
+margin: 0 6.04396% 0 0;
+    width: 93.95604%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    width: 910px;
+    min-height: 80px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.ui-carousel-list{
+	margin-bottom:20px;
+	position:relative;
+
+}
+
+ul {
+	margin: 0px 0px 10px;
+}
+
+ul, ol {
+	padding:0;
+	margin: 0 0 10px 25px;
+}
+
+ul, dl, ol {
+	text-indent: 0;
+}
+
+.ui-carousel-item {
+	float: left;
+	display: inline;
+	margin: 31px;
+	padding: 40px 0px 0px 0px;
+	width: 130px;
+	height: 80px;
+	background-color:#eee;
+	text-align:center;
+
+}
+
+.ribbon {
+	bottom: 81px;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+	height: 100px;
+    background: url(/images/index/ribbon2019_bg.jpg) repeat-x 0 0;
+
+}
+
+.ribbon-box {
+
+	width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 35px;
+    width: 100%;
+    float: left;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        background-color: #bfbfbf;
+}
+.copy p{
+
+margin-top: 0;
+    margin-bottom: 0rem;
+
+
+}
+
+div#sample1-2 {
+    position: relative;
+    width: 910px;
+    min-height: 80px;
+    margin: 0 auto 0 auto;
+    padding: 0px 0;
+}
+
+	.commonFooter {
+    clear: both;
+    line-height: 1;
+    font-size: 8px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    zoom: 1;
+    background: #d8d8d8;
+}
