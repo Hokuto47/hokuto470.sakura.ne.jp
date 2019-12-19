@@ -4,7 +4,7 @@ Donate link:
 Tags: Google Analytics, New posts, Related Posts, sitemap, sns, twitter card, Facebook Page Plugin, OG tags,
 Requires at least: 5.1.0
 Tested up to: 5.3.0
-Stable tag: 9.6.9.0
+Stable tag: 9.7.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +34,6 @@ Many features can be stopped individually.
 [ Gutenberg Blocks ]
 
 * Staff
-* Outer
 * Alert
 * Faq
 * balloon
@@ -44,6 +43,13 @@ Many features can be stopped individually.
 * PR Content
 * Title（with sub text）
 * Responsive Spacer
+
+[ Gutenberg core blocks extend ]
+
+* Title
+* Image
+* List
+* Group
 
 [ Social media ]
 
@@ -86,6 +92,10 @@ e.g.
 2. This is an example of SNS cooperation setting screen.
 
 == Changelog ==
+
+= 9.7.0.0 =
+[ Add function ][ Block ] Core block style expand
+
 
 = 9.6.9.0 =
 [ Bugfix ] Use with VK Post Author Display bug fix

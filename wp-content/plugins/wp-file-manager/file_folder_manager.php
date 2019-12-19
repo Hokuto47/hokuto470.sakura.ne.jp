@@ -4,7 +4,7 @@
   Plugin URI: https://wordpress.org/plugins/wp-file-manager
   Description: Manage your WP files.
   Author: mndpsingh287
-  Version: 5.4
+  Version: 5.5
   Author URI: https://profiles.wordpress.org/mndpsingh287
   License: GPLv2
  **/
@@ -669,7 +669,7 @@ if (!class_exists('mk_file_folder_manager')):
                 wp_localize_script( 'file_manager_free_shortcode_admin', 'fmfparams', array(
                     'ajaxurl' => admin_url('admin-ajax.php'),
                     'nonce' => $fm_nonce,
-                    'lang' => isset($_GET['lang']) ? sanitize_text_field($_GET['lang']) : ($wp_fm_lang !== false) ? $wp_fm_lang : 'en',
+                    'lang' => isset($_GET['lang']) ? sanitize_text_field($_GET['lang']) : (($wp_fm_lang !== false) ? $wp_fm_lang : 'en'),
                     'fm_enable_media_upload' => (isset($opt['fm_enable_media_upload']) && $opt['fm_enable_media_upload'] == '1') ? '1' : '0',
                     )
                 );        

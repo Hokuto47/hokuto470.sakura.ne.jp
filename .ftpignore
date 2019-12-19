@@ -1,0 +1,23 @@
+{
+    "protocol": "sftp",
+    "host": "hokuto470.sakura.ne.jp",
+    "port": 22,
+    "user": "hokuto470",
+    "pass": "Hokuto470",
+    "promptForPass": false,
+    "remote": "/home/hokuto470/www/wordpress/",
+    "local": "",
+    "agent": "",
+    "privatekey": "",
+    "passphrase": "",
+    "hosthash": "",
+    "ignorehost": true,
+    "connTimeout": 10000,
+    "keepalive": 10000,
+    "keyboardInteractive": false,
+    "keyboardInteractiveForPass": false,
+    "remoteCommand": "",
+    "remoteShell": "",
+    "watch": [],
+    "watchTimeout": 500
+}

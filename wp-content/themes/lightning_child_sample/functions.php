@@ -74,13 +74,14 @@ function add_wp_footer_custom(){ ?>
 <?php }
 // add_action( 'wp_footer', 'add_wp_footer_custom', 1 );
 
+
 /*-------------------------------------------*/
 /*	Load JS
 /*-------------------------------------------*/
 function loadjs(){
 wp_register_script ('ScrollMagic' , get_stylesheet_directory_uri() .  '/js/ScrollMagic.min.js' , ' ', 1, true );
  wp_enqueue_script('ScrollMagic');
-	
+
 wp_register_script ('debugScrollMagic' , get_stylesheet_directory_uri() .  '/js/plugins/debug.addIndicators.min.js' , ' ', 1, true );
  wp_enqueue_script('debugScrollMagic');
 
